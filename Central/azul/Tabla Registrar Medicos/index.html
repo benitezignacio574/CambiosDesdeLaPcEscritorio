@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>CRUD LOCAL JS</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header id="header" class="container-fluid">
+        <h2>Alarma azul</h2>
+        <div class="dropdown">
+            <button class="redondo"></button>
+            <div class="dropdown-content">
+                <a href="/Login/login.html">Cerrar Sesion</a>
+            </div>
+        </div>
+    </header>
+    <div id="meñu" class="container-fluid">
+        <a href="/azul/Inicio/inicio.html" class="enlaces">Historial de A.A</a>
+        <a href="/azul/Medico/medico.html" class="enlaces">Medicos</a>
+        <a href="/azul/Tabla Registrar Medicos/index.html" class="enlaces">Agregar medico</a>
+        <a href="/azul/His-Clic/his-clin.html" class="enlaces">Historial clinico</a>
+    </div>
+
+    <div class="contenedor">
+
+        <div class="div-formulario">
+            <h2>Formulario</h2>
+
+            <form action="#" id="formulario">
+                <input type="text" id="nombre" placeholder="Ingresa un nombre y apellido">
+                <input type="text" id="especialidad" placeholder="Ingresa el especialidad">
+                <input type="dni" id="DNI" placeholder="Ingresa el DNI">
+                <button type="submit" id="btnAgregar" class="a">Agregar</button>
+            </form>
+        </div>
+
+        <div class="div-listado">
+            <h2>Listado De Medicos</h2>
+            <div class="div-empleados">
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
