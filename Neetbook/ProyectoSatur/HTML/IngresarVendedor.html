@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satur</title>
+    <link rel="stylesheet" href="../CSS/ingresarVendedor.css">
+	<link rel="shortcut icon" href="/imagenSatur/satur.jpg" type="image/x-icon">
+</head>
+<body style="display:flex; align-items:center; justify-content:center;">
+  <div class="form">
+    <a href="../HTML/Inicio.html" class="a">VOLVER</a>
+    <form class="register-form" method="POST">
+      <h2>Registro</h2>
+      <input type="text" placeholder="Nombre del Local" required/>
+      <div style="display:flex; gap:7px;" >
+        <input type="email" placeholder="Email" required/>
+        <input type="text" placeholder="Direccion" required/>
+      </div>
+      <input type="text" placeholder="Telefono" required/>
+      <div style="display:flex; gap:7px;">
+        <input type="text" placeholder="DNI" required/>
+        <input type="password" placeholder="Contraseña" required/>
+      </div>
+      <div style="display: flex; margin-top:-14px; gap:23px;"> 
+        <h4 style="color: #fcfbfb3f;">Tiene Soporte Tecnico?</h4>
+        <div style="display: flex; gap:5px; margin-top:14px;">
+          <label for="Si" style="color: #fcfbfb75; margin-top:7px;">Si</label>
+          <input type="radio" style="height: 25px;">
+
+          <label for="No" style="color: #fcfbfb79; margin-top:7px;">No</label>
+          <input type="radio" style="height: 25px;">
+        </div>
+      </div>
+      <a class="btn" href="#">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Crear
+      </a>
+      <p class="message">Al Registrase aceptas nuestros terminos y condiciones</p>
+      <p class="message">¿Ya registrado?<a href="#">Iniciar Sesion</a></p>
+    </form>
+    <form class="login-form" method="post">
+      <h2></i>Inicio de Sesion </h2>
+      <input type="text" placeholder="Usuario" required />
+      <input type="password" placeholder="Contraseña" required/>
+      
+      <a class="btn" href="/Venta/index.html">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Iniciar Sesion
+      </a>
+      <p class="message">Al Iniciar aceptas nuestros terminos y condiciones</p>
+      <p class="message">¿No registrado? <a href="#"> Crea tu Cuenta </a></p>
+    </form>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="/JS/IngresarVendedor.js"></script>
+<script src="/JS/volver.js"></script>
+</body>
+</html>
+
