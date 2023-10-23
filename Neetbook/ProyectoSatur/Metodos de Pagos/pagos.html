@@ -8,11 +8,13 @@
     <link rel="shortcut icon" href="../imagenSatur/satur.jpg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" type="text/css" >
+    <link rel="stylesheet" href="compras.css">
+    <link rel="stylesheet" href="cajas.css">
     <link rel="stylesheet" href="../Venta/barra.css">
     <link rel="stylesheet" href="../Venta/footer.css">
     <link rel="stylesheet" href="busqueda.css">
-    <link rel="stylesheet" href="./css/envio.css">
-    <link rel="stylesheet" href="./css/body.css">
+    <link rel="stylesheet" href="pagos.css">
+    <link rel="stylesheet" href="Pago.css">
      <!-- BOXICONS -->
     <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' >
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -38,7 +40,7 @@
                 <i class="bi bi-x"></i>
             </button>
             <header>
-                <h1 class="logo">Metodos de Envio</h1>
+                <h1 class="logo">Metodos de Pago</h1>
                 
             </header>
             <nav>
@@ -55,11 +57,11 @@
                         </i>Perfil / Gestion</button>
                     </li>
                     <li>
-                        <button id="Pago" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb-fill">
+                        <button id="Pago" class="boton-menu boton-categoria active"><i class="bi bi-hand-index-thumb-fill">
                         </i>Metodos de Pago</button>
                     </li>
                     <li>
-                        <button id="Envio" class="boton-menu boton-categoria active"><i class="bi bi-hand-index-thumb-fill">
+                        <button id="Envio" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb-fill">
                         </i>Metodos de Envio</button>
                     </li>
                 </ul>
@@ -84,41 +86,78 @@
             
         </aside>
         <main>
-            <h2 class="titulo-principal" id="titulo-principal">Metodos de Envio</h2>
+            <h2 class="titulo-principal" id="titulo-principal">Metodos de Pago</h2>
             <div id="contenedor-productos" class="contenedor-productos">
                 <section class="container">
+            
+        <div class="title">
+            <h4>Seleccione un método de pago</h4>
+        </div>
 
         <form action="#">
+            <input type="radio" name="payment" id="visa">
+            <input type="radio" name="payment" id="mastercard">
+            <input type="radio" name="payment" id="paypal">
+            <input type="radio" name="payment" id="AMEX">
+            <input type="radio" name="payment" id="pago">
 
             <div class="category">
                 <label for="visa" class="visaMethod">
                     <div class="imgName">
-                        <div class="imgContainer Sucursal">
-                            <img src="../Metodo de Envio/img/istockphoto-818448366-170667a-removebg-preview.png" alt="">
-                                <p class="tienda">Preparamos tu pedido y lo pasas a retirar a nuestra Sucursal</p>
+                        <div class="imgContainer visa">
+                            <img src="https://i.ibb.co/vjQCN4y/Visa-Card.png" alt="">
                         </div>
-                        <span class="name">Recogida en Sucursal</span>
+                        <span class="name">VISA</span>
                     </div>
+                    <span class="check"><i class="fa-solid fa-circle-check" style="color: #6064b6;"></i></span>
                 </label>
 
                 <label for="mastercard" class="mastercardMethod">
                     <div class="imgName">
-                        <div class="imgContainer Correo">
-                            <img src="../Metodo de Envio/img/Correo-removebg-preview.png" alt="">
-                                <p class="correo">Enviamos tu pedido a tu estacion de correo mas cercano, para que pases a retirar</p>
+                        <div class="imgContainer mastercard">
+                            <img src="../Metodos de Pagos/img/mastercard-removebg-preview.png" alt="">
                         </div>
-                        <span class="name">Entrega en Correo</span>
+                        <span class="name">Mastercard</span>
                     </div>
+                    <span class="check"><i class="fa-solid fa-circle-check" style="color: #6064b6;"></i></span>
                 </label>
 
                 <label for="paypal" class="paypalMethod">
                     <div class="imgName">
-                        <div class="imgContainer Domicilio">
-                            <img src="../Metodo de Envio/img/mensajero.png" alt="">
-                                <p class="mensajero">Enviamos tu pedido y lo recibis en la puerta de tu domicilio o donde indiques</p>
+                        <div class="imgContainer paypal">
+                            <img src="https://i.ibb.co/KVF3mr1/paypal.png" alt="">
                         </div>
-                        <span class="name">Entrega a Domicilio</span>
+                        <span class="name">Paypal</span>
                     </div>
+                    <span class="check"><i class="fa-solid fa-circle-check" style="color: #6064b6;"></i></span>
+                </label>
+
+                <label for="AMEX" class="amexMethod">
+                    <div class="imgName">
+                        <div class="imgContainer AMEX">
+                            <img src="https://i.ibb.co/wQnrX86/American-Express.jpg" alt="">
+                        </div>
+                        <span class="name">AMEX</span>
+                    </div>
+                    <span class="check"><i class="fa-solid fa-circle-check" style="color: #6064b6;"></i></span>
+                </label>
+
+                <label for="pago" class="pagoMethod">
+                    <div class="imgName">
+                        <div class="imgContainer Pago">
+                            <img src="../Metodos de Pagos/img/Logo-Mercado-Pago-e1518197726853-removebg-preview.png" alt="">
+                        </div>
+                    </div>
+                    <span class="check"><i class="fa-solid fa-circle-check" style="color: #6064b6;"></i></span>
+                </label>
+                <label for="tarjeta" class="pagoMethod">
+                    <a href="../Tarjeta/index.html">
+                        <div class="imgName">
+                            <div class="imgContainer Pago">
+                                <img src="../Metodos de Pagos/img/+-removebg-preview.png" alt="">
+                            </div>
+                        </div>
+                    </a>
                 </label>
             </div>
         </form>

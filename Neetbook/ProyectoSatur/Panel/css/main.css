@@ -117,7 +117,6 @@ main {
     transform: scale(1.05);
     box-shadow: var(--box-shadow-expand);
 }
-
 body.dark-mode .grid-item:hover {
     color: var(--clr-dark);
 }

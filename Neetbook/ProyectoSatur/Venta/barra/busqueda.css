@@ -1,10 +1,10 @@
 .input-group {
-	width: 20%;
+	width: 30%;
     height: 100%;
     background-color: #fff5;
     padding: 0 .8rem;
     border-radius: 2rem;
-	margin-left: 45%;
+	margin-left: 40%;
 
     display: flex;
     justify-content: center;
@@ -14,9 +14,9 @@
 }
 
 .input-group:hover {
-    width: 30%;
+    width: 35%;
     background-color: #fff8;
-    box-shadow: 0 .1rem .4rem #0002;
+    box-shadow: 0 .1rergba(196, 84, 84, 0.533)em #0002;
 }
 
 .input-group img {
